@@ -20,7 +20,7 @@ const app = express();
 
 
 
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 app.set("view engine","hbs");
 app.use("/assets", express.static(path.join(__dirname, "./assets")))
